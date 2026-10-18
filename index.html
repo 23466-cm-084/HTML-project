@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f1" />
+    <meta name="description" content="Find the local places people you trust really love." />
+    <title>Sasae — good things, passed along</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="demo-note"><span class="demo-dot"></span> A little preview of Sasae · sample places and scores</div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Sasae home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 36 36" fill="none">
+              <path d="M18 4.5c3.1 0 4.5 4.4 2.1 6.3 4.3-2.2 7.7 1.2 5.5 5.5 1.9-2.4 6.3-1 6.3 2.1s-4.4 4.5-6.3 2.1c2.2 4.3-1.2 7.7-5.5 5.5 2.4 1.9 1 6.3-2.1 6.3s-4.5-4.4-2.1-6.3c-4.3 2.2-7.7-1.2-5.5-5.5-1.9 2.4-6.3 1-6.3-2.1s4.4-4.5 6.3-2.1c-2.2-4.3 1.2-7.7 5.5-5.5C13.5 8.9 14.9 4.5 18 4.5Z" fill="currentColor" />
+              <circle cx="18" cy="18" r="3.4" fill="#F6F7F1" />
+            </svg>
+          </span>
+          <span class="brand-word">sasae<span>.</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#discover">Discover</a>
+          <a class="nav-link" href="#how-it-works">How it works</a>
+          <a class="nav-link" href="#community">Our community</a>
+        </nav>
+
+        <a class="header-cta" href="#discover">Find my next favourite <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#discover">Discover</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#community">Our community</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero page-wrap">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-spark">✳</span> GOOD THINGS TRAVEL BY WORD OF MOUTH</div>
+          <h1>Find your kind<br />of <em>good.</em></h1>
+          <p class="hero-intro">The little local places people love, passed along by people you can trust.</p>
+
+          <form class="search-box" id="searchForm">
+            <label class="search-field search-what">
+              <span class="field-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+              </span>
+              <span class="field-content"><span class="field-label">I’m looking for</span><input id="queryInput" type="search" value="Shawarma" placeholder="A dish, place, or shop" /></span>
+            </label>
+            <span class="search-divider" aria-hidden="true"></span>
+            <label class="search-field search-where">
+              <span class="field-icon pin-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M19 10.2c0 5.1-7 11-7 11s-7-5.9-7-11a7 7 0 1 1 14 0Z"></path><circle cx="12" cy="10" r="2.2"></circle></svg>
+              </span>
+              <span class="field-content"><span class="field-label">Around</span><input id="locationInput" type="text" value="Vijayawada" placeholder="Your neighbourhood" /></span>
+            </label>
+            <button class="search-submit" type="submit" aria-label="Search recommendations">
+              <span>Let’s find it</span><span class="submit-arrow" aria-hidden="true">↗</span>
+            </button>
+          </form>
+          <div class="hero-meta"><span class="meta-check">✓</span> Real recommendations. Real people. No paid rankings.</div>
+        </div>
+
+        <div class="hero-visual" aria-label="A delicious shawarma ready to share">
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=1000&q=85" alt="Freshly prepared shawarma with vegetables" />
+            <div class="photo-sun"></div>
+            <div class="photo-caption">
+              <span class="caption-kicker">A GOOD TIP FROM YOUR CITY</span>
+              <span class="caption-title">Worth the<br />little detour.</span>
+            </div>
+            <div class="floating-note">
+              <div class="note-avatars" aria-hidden="true"><span>R</span><span>S</span><span>A</span></div>
+              <div class="note-copy"><strong>People like you</strong><span>have good taste</span></div>
+              <span class="note-heart" aria-hidden="true">♥</span>
+            </div>
+          </div>
+          <div class="hero-doodle doodle-one" aria-hidden="true">✳</div>
+          <div class="hero-doodle doodle-two" aria-hidden="true">✧</div>
+          <div class="hero-side-label">MADE FOR THE CURIOUS & HUNGRY <span>↙</span></div>
+        </div>
+      </section>
+
+      <section class="discover-section" id="discover">
+        <div class="page-wrap">
+          <div class="section-topline">
+            <div>
+              <div class="eyebrow section-eyebrow"><span class="eyebrow-spark">✳</span> GOOD PICKS, CLOSE BY</div>
+              <h2 id="resultsTitle">Shawarma spots worth <em>knowing.</em></h2>
+              <p class="section-subtitle" id="resultsSubtitle">A few lovely leads around Vijayawada, picked by people who’ve been.</p>
+            </div>
+            <label class="radius-control">
+              <span>Within</span>
+              <select id="radiusSelect" aria-label="Search radius">
+                <option value="5" selected>5 km</option>
+                <option value="10">10 km</option>
+                <option value="20">20 km</option>
+              </select>
+              <span class="select-chevron" aria-hidden="true">⌄</span>
+            </label>
+          </div>
+
+          <div class="discovery-toolbar">
+            <div class="category-tabs" role="group" aria-label="Filter by category">
+              <button class="category-tab active" data-category="all" type="button">All picks <span class="tab-count">03</span></button>
+              <button class="category-tab" data-category="food" type="button">Food & drink</button>
+              <button class="category-tab" data-category="shops" type="button">Shops</button>
+            </div>
+            <div class="sort-label"><span class="sort-spark">✳</span> Sorted by helpful recommendations</div>
+          </div>
+
+          <div class="results-grid" id="resultsGrid" aria-live="polite"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <span class="empty-illustration" aria-hidden="true">☁</span>
+            <h3>Nothing nearby just yet.</h3>
+            <p>Try a bigger radius or another search. We’re always adding local favourites.</p>
+            <button type="button" class="text-button" id="clearSearch">Show all picks <span>↗</span></button>
+          </div>
+
+          <div class="demo-footnote"><span class="info-icon">i</span> Prototype preview: these places, distances and trust numbers are example content.</div>
+        </div>
+      </section>
+
+      <section class="how-section page-wrap" id="how-it-works">
+        <div class="how-heading">
+          <div class="eyebrow"><span class="eyebrow-spark">✳</span> A LITTLE HELP GOES A LONG WAY</div>
+          <h2>Good recommendations<br />make a <em>circle.</em></h2>
+          <p>It’s simple: ask, try, and tell the next person what you think.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon icon-ask" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 11.5h32v22H23l-9 7v-7H8v-22Z"></path><path d="M16 20h16M16 26h10"></path></svg></div>
+            <h3>Ask your city</h3>
+            <p>Tell us what you’re after and how far you’d like to go.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon icon-trust" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m24 5 5.5 11.2L42 18l-9 8.8 2.1 12.5L24 33.4l-11.1 5.9L15 26.8 6 18l12.5-1.8L24 5Z"></path><path d="m19.3 23.6 3.1 3.1 6.6-6.8"></path></svg></div>
+            <h3>See who vouches</h3>
+            <p>Every pick comes with a person and a reason behind it.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon icon-share" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M24 40S8 30.2 8 18.4C8 10.1 18 7.6 24 15c6-7.4 16-4.9 16 3.4C40 30.2 24 40 24 40Z"></path><path d="M17 23.5h14m-5-5 5 5-5 5"></path></svg></div>
+            <h3>Pass it on</h3>
+            <p>Tell us how it went, and help someone else choose well.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="community-section" id="community">
+        <div class="community-inner page-wrap">
+          <div class="community-mark" aria-hidden="true">✳</div>
+          <div class="community-copy">
+            <div class="eyebrow">YOUR CITY HAS GOOD TASTE</div>
+            <h2>Be the friend who<br />always <em>knows a place.</em></h2>
+            <p>Leave the next person a tip they’ll be glad they got.</p>
+          </div>
+          <a class="community-cta" href="#discover">Explore local picks <span>↗</span></a>
+          <div class="community-flower flower-a" aria-hidden="true">✿</div>
+          <div class="community-flower flower-b" aria-hidden="true">✳</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-wrap">
+      <a class="brand footer-brand" href="#top" aria-label="Sasae home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M18 4.5c3.1 0 4.5 4.4 2.1 6.3 4.3-2.2 7.7 1.2 5.5 5.5 1.9-2.4 6.3-1 6.3 2.1s-4.4 4.5-6.3 2.1c2.2 4.3-1.2 7.7-5.5 5.5 2.4 1.9 1 6.3-2.1 6.3s-4.5-4.4-2.1-6.3c-4.3 2.2-7.7-1.2-5.5-5.5-1.9 2.4-6.3 1-6.3-2.1s4.4-4.5 6.3-2.1c-2.2-4.3 1.2-7.7 5.5-5.5C13.5 8.9 14.9 4.5 18 4.5Z" fill="currentColor"/><circle cx="18" cy="18" r="3.4" fill="#F6F7F1"/></svg></span>
+        <span class="brand-word">sasae<span>.</span></span>
+      </a>
+      <p>Good things, passed along. <span>Made with care in Vijayawada.</span></p>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </footer>
+
+    <dialog class="feedback-dialog" id="feedbackDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+      <span class="dialog-spark" aria-hidden="true">✳</span>
+      <div class="eyebrow">CLOSE THE LOOP</div>
+      <h2 id="dialogTitle">Did you try it?</h2>
+      <p class="dialog-place" id="dialogPlace">Tell us how the recommendation worked out.</p>
+      <p class="dialog-helper">Your honest answer helps the next person choose.</p>
+      <div class="feedback-options">
+        <button type="button" data-rating="loved"><span aria-hidden="true">♥</span> Loved it</button>
+        <button type="button" data-rating="okay"><span aria-hidden="true">◡</span> It was okay</button>
+        <button type="button" data-rating="miss"><span aria-hidden="true">↗</span> Not for me</button>
+      </div>
+      <button class="not-visited" type="button" id="notVisited">I haven’t been yet</button>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
